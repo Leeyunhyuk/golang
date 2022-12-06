@@ -26,4 +26,10 @@ func main() {
 		fmt.Printf("ex2 -> len: %d, cap: %d, value: %v\n", len(s4), cap(s4), s4) //길이 및 용량 자동 증가(용량 : 2배)
 	}
 
+	s5 := make([]int, 5, 12)
+	fmt.Printf("\ns5 len : %d, cap : %d, value : %v\n", len(s5), cap(s5), s5)
+	s5 = append(s5, 1, 2, 3)
+	fmt.Printf("\ns5 len : %d, cap : %d, value : %v\n", len(s5), cap(s5), s5)
+	s5 = append(s5, 4, 5, 6, 7, 8)
+	fmt.Printf("\ns5 len : %d, cap : %d, value : %v\n", len(s5), cap(s5), s5)
 }
